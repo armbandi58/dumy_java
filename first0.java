@@ -17,9 +17,26 @@ class first0{
         blabla("Had menjen.");
 
         Scanner scanner_in = new Scanner(System.in);
-        System.out.println(scanner_in.nextLine());
+        System.out.println("Irj be valamit.");
+        String had = scanner_in.nextLine();
+
+        //System.out.println("");
+        System.out.println(had);
 
         scanner_in.close();
+
+        komplex asd = new komplex(23.4,34.5);
+
+        asd.printVar();
+
+        asd.setVar(45.6, 78.921);
+        asd.printVar();
+
+        double tmp0 = asd.getIm(), tmp1 = asd.getRe();
+
+        System.out.println("Ez: "+tmp0+", "+tmp1);
+        asd.printAbs();
+        asd.printDegree();
     }
 
     public static void blabla(String str_in){
