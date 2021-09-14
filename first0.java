@@ -37,6 +37,13 @@ class first0{
         System.out.println("Ez: "+tmp0+", "+tmp1);
         asd.printAbs();
         asd.printDegree();
+
+        cenzor Cenz = new cenzor("bla", "ez mar az");
+        String csere = "bla bla, mehetne mar bla, z bla, blabla";
+
+        csere = Cenz.cenzura(csere);
+        System.out.println(csere);
+
     }
 
     public static void blabla(String str_in){

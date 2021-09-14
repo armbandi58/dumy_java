@@ -11,6 +11,7 @@ public class komplex {
     public komplex(double asd0, double asd1){
         this.Re = asd0;
         this.Im = asd1;
+        System.out.println("[+] Komplex constructor called.");
     }
 
     public double getIm(){
