@@ -18,13 +18,13 @@ class first0{
 
         Scanner scanner_in = new Scanner(System.in);
         System.out.println("Irj be valamit.");
-        String had = scanner_in.nextLine();
+/*        String had = scanner_in.nextLine();
 
         //System.out.println("");
         System.out.println(had);
 
         scanner_in.close();
-
+*/
         komplex asd = new komplex(23.4,34.5);
 
         asd.printVar();
@@ -43,7 +43,18 @@ class first0{
 
         csere = Cenz.cenzura(csere);
         System.out.println(csere);
+/*
+        String asd00 = "Hanlo hanlo";
+        String asd02 = "Hanlo Sadasdasd";
+        double asd01 = 89.2213124;
+        System.out.printf("%s\n\tEz mar az%s\n\t %.2f", asd00, asd02,asd01);
+        */
+        user_character Char_0 = new user_character("Bela", "man", "wizzard", 178.9, 79.4);
+        Char_0.printChar();
 
+        Char_0.printPoz();
+        Char_0.setPoz(23.4, 456.81, 12.5672);
+        Char_0.printPoz();
     }
 
     public static void blabla(String str_in){
