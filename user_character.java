@@ -9,7 +9,6 @@ public class user_character{
     private double poz_y;
     private double poz_z;
 
-
     public user_character(String n, String s, String cl, double h, double w ){
         this.name = n;
         this.sex = s;
