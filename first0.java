@@ -81,6 +81,10 @@ class first0 extends JFrame{
         boolean asd_reseize = false;
         MainWindow mw = new MainWindow(mw0_title, asd_x, asd_y, asd_reseize);
         mw.add_Label("name_label");
+        mw.add_Label("Ez mar az");
+        mw.add_gbl(1.0, 2.0);
+        mw.add_gbl(2.4, 4.0);
+
         mw.printVars();
         mw.setVisible(true);
     }

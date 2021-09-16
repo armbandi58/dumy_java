@@ -1,12 +1,17 @@
 //import javax.swing.JFrame;
 import javax.swing.*;
+//import javax.swing.GroupLayout;
+import java.awt.GridBagLayout;
+import java.awt.*;
+
 
 public class MainWindow extends JFrame{
     private String title;
     private int seize_x;
     private int seize_y;
     private boolean resize;
-//    private 
+    private JPanel p = new JPanel();    //maga a frame
+    //private GridBagLayout gbl = new GridBagLayout();
   
     public MainWindow(String tit, int sx, int sy, boolean v_res){
         super();
@@ -47,9 +52,16 @@ public class MainWindow extends JFrame{
     }
 
     public void add_Label(String name_label){
-        JPanel p = new JPanel();
         JLabel label_00 = new JLabel(name_label);
-        p.add(label_00);
-        this.add(p);
+        this.p.add(label_00);
+        this.add(this.p);
     }
+
+    public void add_gbl(double gbl_cw, double gbl_rw){
+        GridBagLayout gbl = new GridBagLayout();
+        gbl.columnWeights = new double[]{0.0, 1.0, 0.0, 1.0};
+        gbl.rowWeights = new double[]{1.0, 0.0};
+        this.p.setLayout(gbl);
+    }
+
 }
