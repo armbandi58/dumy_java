@@ -63,6 +63,15 @@ class first0{
         String txt_path = "/Users/andrasbors/Documents/vscode/java/filek/test.txt";
         filestream fs = new filestream();
         fs.printFile(txt_path);
+
+        double res = 0.0;
+        calculator calc = new calculator(45.6,23.4);
+        calc.printVars();
+        res = calc.plus(45.6, 23.4);
+        res = calc.minus(45.6, 23.4);
+        res = calc.division(45.6, 3.5);
+        res = calc.multi(45.6, 23.4);
+        res = calc.pow(17.8, 3);
     }
 
     public static void blabla(String str_in){
