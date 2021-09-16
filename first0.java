@@ -1,7 +1,9 @@
 import java.util.*;
+import javax.swing.JFrame;
+
 //import java.util.Date;
 
-class first0{
+class first0 extends JFrame{
     public static void main(String[] args) {
         try{
             System.out.println("[+] Main fgv inditas...");
@@ -72,6 +74,12 @@ class first0{
         res = calc.division(45.6, 3.5);
         res = calc.multi(45.6, 23.4);
         res = calc.pow(17.8, 3);
+
+        String mw0_title = "Elso";
+        int asdx = 600;
+        int asdy = 600;
+        MainWindow mw = new MainWindow(mw0_title, asdx, asdy);
+        mw.setVisible(true);
     }
 
     public static void blabla(String str_in){
