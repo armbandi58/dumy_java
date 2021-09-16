@@ -76,9 +76,11 @@ class first0 extends JFrame{
         res = calc.pow(17.8, 3);
 
         String mw0_title = "Elso";
-        int asdx = 600;
-        int asdy = 600;
-        MainWindow mw = new MainWindow(mw0_title, asdx, asdy);
+        int asd_x = 600;
+        int asd_y = 600;
+        boolean asd_reseize = false;
+        MainWindow mw = new MainWindow(mw0_title, asd_x, asd_y, asd_reseize);
+        mw.printVars();
         mw.setVisible(true);
     }
 
