@@ -1,11 +1,13 @@
-import javax.swing.JFrame;
+//import javax.swing.JFrame;
+import javax.swing.*;
 
 public class MainWindow extends JFrame{
     private String title;
     private int seize_x;
     private int seize_y;
     private boolean resize;
-
+//    private 
+  
     public MainWindow(String tit, int sx, int sy, boolean v_res){
         super();
         setTitle(tit);
@@ -24,8 +26,7 @@ public class MainWindow extends JFrame{
             this.title, this.seize_x, this.seize_y);
         }else{
             System.out.printf("MW properties: %s, %d, %d, unresizeable.\n",
-            this.title, this.seize_x, this.seize_y);
-            
+            this.title, this.seize_x, this.seize_y); 
         }
     }
 
@@ -43,5 +44,12 @@ public class MainWindow extends JFrame{
 
     public boolean get_resize(){
         return this.resize;
+    }
+
+    public void add_Label(String name_label){
+        JPanel p = new JPanel();
+        JLabel label_00 = new JLabel(name_label);
+        p.add(label_00);
+        this.add(p);
     }
 }

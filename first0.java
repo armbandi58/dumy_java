@@ -80,6 +80,7 @@ class first0 extends JFrame{
         int asd_y = 600;
         boolean asd_reseize = false;
         MainWindow mw = new MainWindow(mw0_title, asd_x, asd_y, asd_reseize);
+        mw.add_Label("name_label");
         mw.printVars();
         mw.setVisible(true);
     }
