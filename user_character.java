@@ -18,6 +18,7 @@ public class user_character{
         this.poz_x = 0.0;
         this.poz_y = 0.0;
         this.poz_z = 0.0;
+        System.out.println("[+] Character class constructor called.");
     }
 
     public void printChar(){
@@ -29,10 +30,21 @@ public class user_character{
         this.poz_x = tmp_x;
         this.poz_y = tmp_y;
         this.poz_z = tmp_z;
+        System.out.println("[+] Poz updated.");
     }
 
     public void printPoz(){
         System.out.printf("%s char actual poz:\n\tX: %.3f,\n\tY: %.3f,\n\tZ: %.3f.\n", 
         this.name, this.poz_x, this.poz_y, this.poz_z);
     }
+
+    public void setChar(String n1, String s1, String cl1, double h1, double w1){
+        this.name = n1;
+        this.sex = s1;
+        this.height = h1;
+        this.width = w1;
+        this.var_class = cl1;
+        System.out.println("[+] Character property setted.");
+    }
+
 }

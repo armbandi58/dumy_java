@@ -15,10 +15,10 @@ class first0{
             ex.printStackTrace();
         }
         blabla("Had menjen.");
-
+/*
         Scanner scanner_in = new Scanner(System.in);
         System.out.println("Irj be valamit.");
-/*        String had = scanner_in.nextLine();
+        String had = scanner_in.nextLine();
 
         //System.out.println("");
         System.out.println(had);
@@ -55,6 +55,14 @@ class first0{
         Char_0.printPoz();
         Char_0.setPoz(23.4, 456.81, 12.5672);
         Char_0.printPoz();
+
+        Char_0.setChar("Ez masik nev", "woman", "Warrior", 198.2, 81.0);
+        Char_0.printChar();
+        
+        ///Users/andrasbors/Documents/vscode/java/filek/test.txt
+        String txt_path = "/Users/andrasbors/Documents/vscode/java/filek/test.txt";
+        filestream fs = new filestream();
+        fs.printFile(txt_path);
     }
 
     public static void blabla(String str_in){
